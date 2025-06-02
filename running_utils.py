@@ -7,12 +7,12 @@ from agents import UCBVI, MVP
 
 
 def trial(S, A, H, K, run_lst, trial_id=1):
-
+    
     np.random.seed(trial_id)
     env = ToyEnv(S, A, H)
     opt = env.computeOptimalValueFunction()
     opt_rewards = opt * np.ones(K)
-
+    
     results_all = {}
 
     for alg in run_lst:

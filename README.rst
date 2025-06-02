@@ -10,9 +10,11 @@ The code requires *python3* along with *numpy* and *matplotlib*.
 
 The configurations used for the experiments in the main paper are in the *configs* folder.
 
-To run the experiments on the illustrative environment, from the root directory, call the python script *parallel_runner.py* with as parameter the name of the configuration file (without ".json") inside the *configs* folder.
+To run the experiments on the illustrative environment, from the root directory, call the python script *parallel_runner.py* with as parameter the pathname of the configuration file (also with ".json"). The bash script *runner_sequence.sh* allows to run in sequence all the configurations in the *configs* folder.
 
 To run the RiverSwim experiment, call the python script *parallel_runner_riverswim.py*.
+
+To run the experiment on MABs, call the python script *runner_bandit.py* with 4 parameters: number of actions, time horizon, number of trials, number of cores.
 
 Cite this Work
 ==============

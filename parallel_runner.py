@@ -10,7 +10,7 @@ from running_utils import trial
 
 if __name__ == '__main__':
 
-    with open('configs/' + sys.argv[1] + '.json') as json_file:
+    with open(sys.argv[1]) as json_file:
         config = json.load(json_file)
 
     time_print = datetime.datetime.now().strftime("(%Y-%b-%d %I:%M%p)")
